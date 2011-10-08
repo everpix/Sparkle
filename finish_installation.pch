@@ -6,6 +6,10 @@
 //  Copyright 2008 Andy Matuschak. All rights reserved.
 //
 
+#ifndef NSAppKitVersionNumber10_5
+#define NSAppKitVersionNumber10_5 949
+#endif 
+
 #define SPARKLE_BUNDLE [NSBundle mainBundle]
 #define SULocalizedString(key,comment) NSLocalizedStringFromTableInBundle(key, @"Sparkle", SPARKLE_BUNDLE, comment)
 #define SUAbstractFail() NSAssert2(nil, @"Can't call %@ on an instance of %@; this is an abstract method!", __PRETTY_FUNCTION__, [self class]);
